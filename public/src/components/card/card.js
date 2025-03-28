@@ -1,5 +1,6 @@
 class Card extends HTMLElement {
 	constructor() {
+        card: []
 		super();
 		this.attachShadow({ mode: 'open' });
 	}
@@ -29,7 +30,6 @@ class Card extends HTMLElement {
     <p>${this.actividades || 'No tiene actividades'}</p>
     <p>${this.reservado || 'No tiene reservaciones'}</p>
     <p>${this.calificacion || 'No tiene calificacion'}</p>
-    <p>${this.alojamiento || 'No tiene alojamiento'}</p>
     <p>${this.alojamiento || 'No tiene alojamiento'}</p>
     <p>${this.guia_incluido || 'No tiene guia_incluido'}</p>
     `;
